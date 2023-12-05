@@ -22,7 +22,7 @@ const Contact = () => {
             <BiMailSend /> : support@petscare.com
           </p>
           <p className="mt-3">
-            <BiPhoneCall /> : 99999999
+            <BiPhoneCall /> : +36 707438588
           </p>
           <p className="mt-3">
             <BiSupport /> : 1800-0000-0000
