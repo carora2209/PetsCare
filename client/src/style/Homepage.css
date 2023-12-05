@@ -1,0 +1,121 @@
+
+
+.container-fluid,.row{
+  margin-right: 0px!important;
+  padding-right: 0px!important;
+}
+
+.home-page h1 {
+  color: rgb(27, 19, 19);
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  display: flex;
+  max-width: 100%;
+  margin-top: 0px!important;
+  margin-right: 0px!important;
+  padding-right: 0px!important;
+  background-color: #eeeded;
+  flex-wrap: wrap;
+}
+
+.home-page .card {
+  background-color: rgba(191, 180, 128, 0.097);
+  
+  width: 23rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.home-page .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.home-page button {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-page button:hover {
+  background-color: #45a049;
+}
+
+.home-page .card-text {
+  color: rgb(0, 0, 0);
+}
+
+.home-page .card img:hover {
+  transform: scale(0.9);
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.filters h4 {
+  margin-top: 100px;
+  color: rgb(56, 38, 38) !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 10px;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+.filters button {
+  background-color: #ff5722;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e64a19;
+}
+
+.loadmore {
+  color: green;
+  font-weight: bold;
+  font-size: 20px !important;
+}
