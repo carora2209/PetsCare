@@ -6,25 +6,25 @@ import { useAuth } from "../../context/auth";
 import moment from "moment";
 
 const Orders = () => {
-  const [orders,setOrders] = useState([])
+  const [orders, setOrders] = useState([])
   const [auth, setAuth] = useAuth()
-  const getOrders = async() =>{
+  const getOrders = async () => {
     try {
-      const {data} = await axios.get(`${process.env.REACT_APP_API}/api/v1/auth/orders`)
+      const { data } = await axios.get(`${process.env.REACT_APP_API}/api/v1/auth/orders`)
       setOrders(data);
 
     } catch (error) {
-        console.log(error) 
+      console.log(error)
     }
   }
 
-  useEffect (() => {
-    if(auth?.token) getOrders();
-  },[auth?.token]);
+  useEffect(() => {
+    if (auth?.token) getOrders();
+  }, [auth?.token]);
 
   return (
     <Layout title={"Your Orders"}>
-      <div className="container-flui p-3 m-3">
+      <div className="container-flui p-3 m-3 dashboard">
         <div className="row">
           <div className="col-md-3">
             <UserMenu />
@@ -81,7 +81,7 @@ const Orders = () => {
             })}
           </div>
         </div>
-        </div>
+      </div>
     </Layout>
   );
 };

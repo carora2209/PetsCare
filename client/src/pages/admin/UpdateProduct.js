@@ -70,7 +70,7 @@ const UpdateProduct = () => {
       productData.append("quantity", quantity);
       photo && productData.append("photo", photo);
       productData.append("category", category);
-      productData.append("shipping",shipping)
+      productData.append("shipping", shipping)
       const { data } = axios.put(
         `${process.env.REACT_APP_API}/api/v1/product/update-product/${id}`,
         productData
@@ -104,7 +104,7 @@ const UpdateProduct = () => {
   };
   return (
     <Layout title={"Dashboard - Create Product"}>
-      <div className="container-fluid m-3 p-3">
+      <div className="container-fluid m-3 p-3 dashboard">
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
